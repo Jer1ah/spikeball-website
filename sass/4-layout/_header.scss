@@ -4,4 +4,53 @@
                 url("../../images/spikeball-header.png");
     background-size: cover;
     background-position: center;
+
+    &__heading {
+        float: right;
+        margin: 40rem 5rem 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        h1 {
+            font-size: 4rem;
+            text-align: right;
+            background-color: $black;
+            color: $white;
+            margin: .5rem 0;
+            letter-spacing: .33rem;
+        }
+    }
+
+    &__button {
+        display: flex;
+        height: 5rem;
+        text-decoration: none;
+        color: $black;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 3rem;
+
+        span:first-child {
+            height: 100%;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 13rem;
+        }
+
+        span:last-child {
+            height: 100%;
+            background-color: $yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5rem;
+        }
+
+        img {
+            height: 2rem;
+        }
+    }
 }
