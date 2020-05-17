@@ -1,0 +1,88 @@
+.community {
+    &__list {
+        width: 135rem;
+        margin: 10rem auto 10rem;
+        display: flex;
+    }
+
+    &__item  {
+        flex: 1;
+        position: relative;
+        margin-right: 2rem;
+
+        &Info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $light-gray;
+            height: 15rem;
+            width: 35rem;
+
+            h1 {
+                font-size: 3.5rem;
+                font-weight: bolder;
+                margin-left: 4rem;
+                margin-bottom: 1rem;
+                margin: 3rem 0 1.5rem 4rem;
+            }
+
+            a {
+                text-decoration: none;
+                border-bottom: solid .2rem $yellow;
+                padding-bottom: .33rem;
+                color: $black;
+                font-size: 1.5rem;
+                letter-spacing: .1rem;
+                margin-left: 4rem;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__aside {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2rem;
+
+        &Item {
+            display: flex;
+
+            img {
+                width: 50%;
+            }
+
+            &Info {
+                flex: 1;
+                background-color: $light-gray;
+
+                h1 {
+                    font-size: 3.5rem;
+                    font-weight: bolder;
+                    margin: 4.5rem 0 1.5rem 4rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    border-bottom: solid .2rem $yellow;
+                    padding-bottom: .33rem;
+                    color: $black;
+                    font-size: 1.5rem;
+                    letter-spacing: .1rem;
+                    margin-left: 4rem;
+                }
+            }
+
+            &Info:last-child {
+                h1 {
+                    margin-top: 2.7rem;
+                }
+            }
+        }
+    }
+}
