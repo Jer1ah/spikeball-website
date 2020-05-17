@@ -1,0 +1,66 @@
+.bestSellers {
+    @include displayFlex(column, center, flex-start);
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bolder;
+        margin: 3.3rem 0 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        border-bottom: solid .2rem $yellow;
+        padding-bottom: .33rem;
+        color: $black;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        width: 120rem;
+        padding: 0;
+        list-style: none;
+        margin: 5rem auto 8rem;
+
+        &Item {
+            width: 30%;
+
+            img {
+                width: 100%;
+                height: 35rem;
+            }
+
+            span {
+                @include displayFlex(row, center, space-between);
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin: 1.5rem 0 2.5rem;
+            }
+
+            a {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 5rem;
+                background-color: $black;
+                color: $white;
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 1.7rem;
+                letter-spacing: .1rem;
+                transition: all .15s;
+            }
+
+            a:hover {
+                border: .2rem solid $black;
+                background-color: inherit;
+                color: $black;
+            }
+        }
+    }
+}

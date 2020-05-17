@@ -8,7 +8,7 @@
     padding: .1rem;
 
     &__info {
-        @include flexVertical;
+        @include displayFlex(column, flex-start, center);
         align-items: flex-start;
         margin: 20rem 0 0 12rem;
 

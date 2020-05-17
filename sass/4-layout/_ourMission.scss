@@ -1,5 +1,5 @@
 .ourMission {
-    @include flexHorizontalCenter;
+    @include displayFlex(column, center, center);
     flex-direction: column;
 
     h1 {
