@@ -337,4 +337,40 @@ html, body {
   color: #000;
 }
 
+.givingBack {
+  height: 65rem;
+  width: 150rem;
+  max-width: 100%;
+  margin: 0 auto;
+  background: url("../../images/kids-spikeball.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.givingBack h5 {
+  color: #fff;
+  margin: 20rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.givingBack h1 {
+  color: #fff;
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
+  font-size: 3.5rem;
+}
+.givingBack p {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  width: 50rem;
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+}
+
 /*# sourceMappingURL=index.css.map */

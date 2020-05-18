@@ -1,0 +1,35 @@
+.givingBack {
+    height: 65rem;
+    width: 150rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background: url('../../images/kids-spikeball.png');
+    background-size: cover;
+    @include displayFlex(column, center, flex-start);
+
+    h5 {
+        color: $white;
+        margin: 20rem 0 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+    }
+
+    h1 {
+        color: $white;
+        text-align: center;
+        margin: 2.5rem 0 1.5rem;
+        font-size: 3.5rem;
+    }
+
+    p {
+        color: $white;
+        opacity: .90;
+        font-size: 1.8rem;
+        line-height: 2.9rem;
+        width: 50rem;
+        text-align: center;
+        font-weight: 300;
+        margin: 0;
+    }
+}
