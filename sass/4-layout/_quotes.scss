@@ -1,0 +1,46 @@
+.quotes {
+    @include displayFlex(column, center, flex-start);
+
+    h1 {
+        font-size: 4.4rem;
+        margin: 12rem 0 0;
+    }
+
+    span {
+        font-size: 2rem;
+        opacity: .80;
+        margin: 4rem 0 5rem;
+    }
+
+    &__list {
+        @include displayFlex(row, center, space-between);
+        position: relative;
+        width: 70rem;
+        margin: 5rem auto 10rem;
+
+        &Item {
+            width: 15%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .nextButton, .prevButton {
+        width: 1.77rem;
+        position: absolute;
+    }
+
+    .nextButton:hover, .prevButton:hover {
+        cursor: pointer;
+    }
+
+    .nextButton {
+        right: -5rem;
+    }
+
+    .prevButton {
+        left: -5rem;
+    }
+}

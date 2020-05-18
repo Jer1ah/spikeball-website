@@ -373,4 +373,48 @@ html, body {
   margin: 0;
 }
 
+.quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.quotes h1 {
+  font-size: 4.4rem;
+  margin: 12rem 0 0;
+}
+.quotes span {
+  font-size: 2rem;
+  opacity: 0.8;
+  margin: 4rem 0 5rem;
+}
+.quotes__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 70rem;
+  margin: 5rem auto 10rem;
+}
+.quotes__listItem {
+  width: 15%;
+}
+.quotes__listItem img {
+  width: 100%;
+}
+.quotes .nextButton, .quotes .prevButton {
+  width: 1.77rem;
+  position: absolute;
+}
+.quotes .nextButton:hover, .quotes .prevButton:hover {
+  cursor: pointer;
+}
+.quotes .nextButton {
+  right: -5rem;
+}
+.quotes .prevButton {
+  left: -5rem;
+}
+
 /*# sourceMappingURL=index.css.map */
