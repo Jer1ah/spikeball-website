@@ -53,11 +53,11 @@
                 font-weight: bolder;
                 font-size: 1.7rem;
                 letter-spacing: .1rem;
+                border: .2rem solid $black;
                 transition: all .15s;
             }
 
             a:hover {
-                border: .2rem solid $black;
                 background-color: inherit;
                 color: $black;
             }

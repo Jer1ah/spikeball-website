@@ -1,4 +1,5 @@
-$('.quotes__list').slick({
+const sliderController = (function() {
+  $('.quotes__list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -14,5 +15,6 @@ $('.quotes__list').slick({
     centerMode: true,
     prevArrow: "<img src='../images/prev-arrow.svg' class='prevButton'/>",
     nextArrow: "<img src='../images/next-arrow.svg' class='nextButton'/>",
+    variableWidth: true
   });
-      
+}());     

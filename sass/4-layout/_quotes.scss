@@ -1,5 +1,5 @@
 .quotes {
-    width: 75rem;
+    width: 70rem;
     margin: 5rem auto 0;
     padding-bottom: 7rem;
 
@@ -13,18 +13,16 @@
     span {
         text-align: center;
         display: block;
-        margin: 3.3rem auto 3rem;
+        margin: 3.5rem auto 1.7rem;
         font-size: 2.2rem;
         letter-spacing: .1rem;
         font-weight: 400;
     }
 
     &__nav {
-        margin: 0 auto;
-        width: 60rem;
-
         img {
-            margin: 0 2.2rem;
+            width: 12rem;
+            margin: 0 .7rem;
         }
     }
 
