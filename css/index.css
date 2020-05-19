@@ -374,47 +374,45 @@ html, body {
 }
 
 .quotes {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  width: 75rem;
+  margin: 5rem auto 0;
+  padding-bottom: 7rem;
 }
 .quotes h1 {
-  font-size: 4.4rem;
-  margin: 12rem 0 0;
+  text-align: center;
+  font-size: 4rem;
+  font-size: bolder;
+  margin-top: 6.6rem;
 }
 .quotes span {
-  font-size: 2rem;
-  opacity: 0.8;
-  margin: 4rem 0 5rem;
+  text-align: center;
+  display: block;
+  margin: 3.3rem auto 3rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
 }
-.quotes__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 70rem;
-  margin: 5rem auto 10rem;
+.quotes__nav {
+  margin: 0 auto;
+  width: 60rem;
 }
-.quotes__listItem {
-  width: 15%;
+.quotes__nav img {
+  margin: 0 2.2rem;
 }
-.quotes__listItem img {
-  width: 100%;
-}
-.quotes .nextButton, .quotes .prevButton {
-  width: 1.77rem;
+.quotes .prevButton, .quotes .nextButton {
+  width: 2rem;
   position: absolute;
 }
-.quotes .nextButton:hover, .quotes .prevButton:hover {
-  cursor: pointer;
+.quotes .prevButton {
+  top: 4rem;
+  left: -5rem;
 }
 .quotes .nextButton {
+  top: 4rem;
   right: -5rem;
 }
-.quotes .prevButton {
-  left: -5rem;
+.quotes .prevButton:hover, .quotes .nextButton:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

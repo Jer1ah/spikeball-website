@@ -1,46 +1,49 @@
 .quotes {
-    @include displayFlex(column, center, flex-start);
+    width: 75rem;
+    margin: 5rem auto 0;
+    padding-bottom: 7rem;
 
     h1 {
-        font-size: 4.4rem;
-        margin: 12rem 0 0;
+        text-align: center;
+        font-size: 4rem;
+        font-size: bolder;
+        margin-top: 6.6rem;
     }
 
     span {
-        font-size: 2rem;
-        opacity: .80;
-        margin: 4rem 0 5rem;
+        text-align: center;
+        display: block;
+        margin: 3.3rem auto 3rem;
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+        font-weight: 400;
     }
 
-    &__list {
-        @include displayFlex(row, center, space-between);
-        position: relative;
-        width: 70rem;
-        margin: 5rem auto 10rem;
+    &__nav {
+        margin: 0 auto;
+        width: 60rem;
 
-        &Item {
-            width: 15%;
-
-            img {
-                width: 100%;
-            }
+        img {
+            margin: 0 2.2rem;
         }
     }
 
-    .nextButton, .prevButton {
-        width: 1.77rem;
+    .prevButton, .nextButton {
+        width: 2rem;
         position: absolute;
     }
 
-    .nextButton:hover, .prevButton:hover {
-        cursor: pointer;
+    .prevButton {
+        top: 4rem;
+        left: -5rem;
     }
 
     .nextButton {
+        top: 4rem;
         right: -5rem;
     }
 
-    .prevButton {
-        left: -5rem;
+    .prevButton:hover, .nextButton:hover {
+        cursor: pointer;
     }
 }
