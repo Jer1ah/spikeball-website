@@ -17,4 +17,24 @@ const sliderController = (function() {
     nextArrow: "<img src='../images/next-arrow.svg' class='nextButton'/>",
     variableWidth: true
   });
-}());     
+}());    
+
+const searchbarController = (function() {
+  const _searchbar = document.querySelector('.searchbar');
+  const _searchButton = document.querySelector('.searchButton');
+  const _nav = document.querySelector('.navigation');
+ 
+  _searchButton.addEventListener("click", () => {
+    if(window.getComputedStyle(_searchbar).getPropertyValue("visibility") === "hidden") {
+      _searchbar.style.visibility = "visible";
+      _searchButton.style.background = "black";
+      _nav.style.boxShadow = "none";
+      _searchButton.childNodes[0].src = "../images/close.svg";
+    } else {
+      _searchbar.style.visibility = "hidden";
+      _searchButton.style.background = "inherit";
+      _nav.style.boxShadow = "0px 0px 15px 0px rgba(167,167,167,1)";
+      _searchButton.childNodes[0].src = "../images/magnifying-glass.svg";
+    }
+  });
+}());

@@ -79,6 +79,24 @@ html, body {
   background-color: #f7f7f7;
 }
 
+.searchbar {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 7rem;
+  border: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  height: 7rem;
+  color: #fff;
+  visibility: hidden;
+}
+
+::placeholder {
+  color: #fff;
+}
+
 .footer {
   height: 11rem;
   border-top: 0.2rem solid #F8F8F8;

@@ -68,3 +68,21 @@
         }
     }
 }
+
+.searchbar {
+    width: 100%;
+    background-color: $black;
+    position: fixed;
+    top: 7rem;
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    height: 7rem;
+    color: $white;
+    visibility: hidden;
+}
+
+::placeholder {
+    color: $white;
+}
