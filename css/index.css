@@ -83,6 +83,7 @@ html, body {
   width: 100%;
   background-color: #000;
   position: fixed;
+  z-index: 101;
   top: 7rem;
   border: none;
   text-align: center;
@@ -95,6 +96,59 @@ html, body {
 
 ::placeholder {
   color: #fff;
+}
+
+.shop__dropdown {
+  position: fixed;
+  top: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 44rem;
+  visibility: hidden;
+}
+.shop__dropdown .info {
+  width: 30rem;
+}
+.shop__dropdown .info h3 {
+  margin: 6rem 0 2.5rem 5rem;
+  font-size: 1.3rem;
+  opacity: 0.65;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+}
+.shop__dropdown .info__list {
+  padding: 0;
+  list-style: none;
+  margin-left: 5rem;
+}
+.shop__dropdown .info__listItem {
+  margin: 2rem 0;
+}
+.shop__dropdown .info__listItem a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #000;
+  opacity: 0.85;
+}
+.shop__dropdown .info__listItem a:hover {
+  text-decoration: underline;
+}
+.shop__dropdown .image {
+  background-color: #ededed;
+  height: 100%;
+  width: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.shop__dropdown .image img {
+  width: 30rem;
 }
 
 .footer {

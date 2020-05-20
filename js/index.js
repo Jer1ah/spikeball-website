@@ -19,6 +19,7 @@ const sliderController = (function() {
   });
 }());    
 
+
 const searchbarController = (function() {
   const _searchbar = document.querySelector('.searchbar');
   const _searchButton = document.querySelector('.searchButton');
@@ -36,5 +37,19 @@ const searchbarController = (function() {
       _nav.style.boxShadow = "0px 0px 15px 0px rgba(167,167,167,1)";
       _searchButton.childNodes[0].src = "../images/magnifying-glass.svg";
     }
+  });
+}());
+
+
+const shopDropdownController = (function() {
+  const _dropdown = document.querySelector('.shop__dropdown');
+  const _shopButton = document.querySelector('.shopButton');
+  
+  _shopButton.addEventListener("mouseover", () => {
+    _dropdown.style.visibility = "visible";
+  });
+
+  _dropdown.addEventListener("mouseleave", () => {
+    _dropdown.style.visibility = "hidden";
   });
 }());

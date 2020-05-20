@@ -69,10 +69,12 @@
     }
 }
 
+//searchbar dropdown styles
 .searchbar {
     width: 100%;
     background-color: $black;
     position: fixed;
+    z-index: 101;
     top: 7rem;
     border: none;
     text-align: center;
@@ -85,4 +87,60 @@
 
 ::placeholder {
     color: $white;
+}
+
+//shop downdown styles
+.shop__dropdown {
+    position: fixed;
+    top: 7rem;
+    @include displayFlex(row, flex-start, center);
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 44rem;
+    visibility: hidden;
+
+    .info {
+        width: 30rem;
+
+        h3 {
+            margin: 6rem 0 2.5rem 5rem;
+            font-size: 1.3rem;
+            opacity: .65;
+            letter-spacing: .2rem;
+            font-weight: 400;
+        }
+
+        &__list {
+            padding: 0;
+            list-style: none;
+            margin-left: 5rem;
+
+            &Item {
+                margin: 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    color: $black;
+                    opacity: .85;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .image {
+        background-color: lighten(lightgrey, 10%);
+        height: 100%;
+        width: 35rem;
+        @include displayFlex(row, center, center);
+
+        img {
+            width: 30rem;
+        }
+    }
 }
