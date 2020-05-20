@@ -80,8 +80,45 @@ html, body {
 }
 
 .footer {
-  height: 7rem;
+  height: 11rem;
   border-top: 0.2rem solid #F8F8F8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer span {
+  margin-left: 7rem;
+  font-size: 1.5rem;
+  opacity: 0.75;
+}
+.footer .emailInput {
+  margin-right: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .emailInput input {
+  border: 0.1rem solid lightgray;
+  border-right: none;
+  height: 4.75rem;
+  width: 25rem;
+  padding: 0;
+  font-size: 1.66rem;
+  text-indent: 2rem;
+}
+.footer .emailInput a {
+  background-color: #F0E50A;
+  height: 5rem;
+  width: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .emailInput img {
+  width: 2.5rem;
 }
 
 .header {

@@ -1,4 +1,37 @@
 .footer {
-    height: 7rem;
+    height: 11rem;
     border-top: .2rem solid $light-gray;
+    @include displayFlex(row, center, space-between);
+
+    span {
+        margin-left: 7rem;
+        font-size: 1.5rem;
+        opacity: .75;
+    }
+
+    .emailInput {
+        margin-right: 7rem;
+        @include displayFlex(row, center, center);
+
+        input {
+            border: .1rem solid lightgray;
+            border-right: none;
+            height: 4.75rem;
+            width: 25rem;
+            padding: 0;
+            font-size: 1.66rem;
+            text-indent: 2rem;
+        }
+
+        a {
+            background-color: $yellow;
+            height: 5rem;
+            width: 5.5rem;
+            @include displayFlex(row, center, center);
+        }
+
+        img {
+            width: 2.5rem;
+        }
+    }
 }
