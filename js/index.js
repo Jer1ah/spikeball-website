@@ -39,17 +39,3 @@ const searchbarController = (function() {
     }
   });
 }());
-
-
-const shopDropdownController = (function() {
-  const _dropdown = document.querySelector('.shop__dropdown');
-  const _shopButton = document.querySelector('.shopButton');
-  
-  _shopButton.addEventListener("mouseover", () => {
-    _dropdown.style.visibility = "visible";
-  });
-
-  _dropdown.addEventListener("mouseleave", () => {
-    _dropdown.style.visibility = "hidden";
-  });
-}());

@@ -20,20 +20,28 @@
         @include displayFlex(row, center, center);
         list-style: none;
         padding: 0;
+        height: 100%;
 
         &Item {
-            margin: 0 1.5rem;
+            margin: 0 .2rem;
+            width: 8rem;
+            height: 100%;
+            @include displayFlex(row, center, center);
 
-            a {
+            .navLink {
                 text-decoration: none;
                 color: $black;
                 font-size: 1.8rem;
                 font-weight: 400;
                 padding-bottom: .33rem;
+                border-bottom: .2rem solid transparent;
             }
+        }
 
-            a:hover {
+        &Item:hover {
+            .navLink {
                 border-bottom: .2rem solid $black;
+                cursor: pointer;
             }
         }
     }
@@ -90,6 +98,10 @@
 }
 
 //shop downdown styles
+.shopButton:hover .shop__dropdown {
+    display: flex;
+}
+
 .shop__dropdown {
     position: fixed;
     top: 7rem;
@@ -98,10 +110,10 @@
     left: 50%;
     transform: translateX(-50%);
     height: 44rem;
-    visibility: hidden;
+    display: none;
 
     .info {
-        width: 30rem;
+        width: 35rem;
 
         h3 {
             margin: 6rem 0 2.5rem 5rem;
@@ -141,6 +153,198 @@
 
         img {
             width: 30rem;
+            height: 35rem;
+        }
+    }
+}
+
+//learn dropdown styles
+.learnButton:hover .learn__dropdown {
+    display: flex;
+}
+
+.learn__dropdown {
+    position: fixed;
+    top: 7rem;
+    @include displayFlex(row, flex-start, center);
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 44rem;
+    display: none;
+
+    .info {
+        width: 35rem;
+
+        h3 {
+            margin: 6rem 0 2.5rem 5rem;
+            font-size: 1.3rem;
+            opacity: .65;
+            letter-spacing: .2rem;
+            font-weight: 400;
+        }
+
+        &__list {
+            padding: 0;
+            list-style: none;
+            margin-left: 5rem;
+
+            &Item {
+                margin: 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    color: $black;
+                    opacity: .85;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .image {
+        background-color: lighten(lightgrey, 10%);
+        height: 100%;
+        width: 35rem;
+        @include displayFlex(row, center, center);
+
+        img {
+            width: 30rem;
+            height: 35rem;
+        }
+    }
+
+    .image:last-child {
+        border-left: .1rem solid lightgray;
+    }
+}
+
+//play dropdown styles
+.playButton:hover .play__dropdown {
+    display: flex;
+}
+
+.play__dropdown {
+    position: fixed;
+    top: 7rem;
+    @include displayFlex(row, flex-start, center);
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 44rem;
+    display: none;
+
+    .info {
+        width: 35rem;
+
+        h3 {
+            margin: 6rem 0 2.5rem 5rem;
+            font-size: 1.3rem;
+            opacity: .65;
+            letter-spacing: .2rem;
+            font-weight: 400;
+        }
+
+        &__list {
+            padding: 0;
+            list-style: none;
+            margin-left: 5rem;
+
+            &Item {
+                margin: 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    color: $black;
+                    opacity: .85;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .image {
+        background-color: lighten(lightgrey, 10%);
+        height: 100%;
+        width: 35rem;
+        @include displayFlex(row, center, center);
+
+        img {
+            width: 30rem;
+            height: 35rem;
+        }
+    }
+
+    .image:last-child {
+        border-left: .1rem solid lightgray;
+    }
+}
+
+//about downdown styles
+.aboutButton:hover .about__dropdown {
+    display: flex;
+}
+
+.about__dropdown {
+    position: fixed;
+    top: 7rem;
+    @include displayFlex(row, flex-start, center);
+    background-color: $white;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 44rem;
+    display: none;
+
+    .info {
+        width: 35rem;
+
+        h3 {
+            margin: 6rem 0 2.5rem 5rem;
+            font-size: 1.3rem;
+            opacity: .65;
+            letter-spacing: .2rem;
+            font-weight: 400;
+        }
+
+        &__list {
+            padding: 0;
+            list-style: none;
+            margin-left: 5rem;
+
+            &Item {
+                margin: 2rem 0;
+
+                a {
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    color: $black;
+                    opacity: .85;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .image {
+        background-color: lighten(lightgrey, 10%);
+        height: 100%;
+        width: 35rem;
+        @include displayFlex(row, center, center);
+
+        img {
+            width: 30rem;
+            height: 35rem;
         }
     }
 }
