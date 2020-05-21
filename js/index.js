@@ -1,3 +1,4 @@
+//quotes slider functionality
 const sliderController = (function() {
   $('.quotes__list').slick({
     slidesToShow: 1,
@@ -20,6 +21,7 @@ const sliderController = (function() {
 }());    
 
 
+//searchbar dropdown functionality
 const searchbarController = (function() {
   const _searchbar = document.querySelector('.searchbar');
   const _searchButton = document.querySelector('.searchButton');
@@ -37,5 +39,24 @@ const searchbarController = (function() {
       _nav.style.boxShadow = "0px 0px 15px 0px rgba(167,167,167,1)";
       _searchButton.childNodes[0].src = "../images/magnifying-glass.svg";
     }
+  });
+}());
+
+
+//shopping cart slide-out functionality
+const shoppingcartSlideController = (function() {
+  const _cart = document.querySelector(".shoppingCart");
+  const _overlay = document.querySelector(".overlay");
+  const _closeButton = document.querySelector(".shoppingCart__heading img");
+  const _cartButton = document.querySelector(".shoppingCartButton");
+
+  _closeButton.addEventListener("click", () => {
+    _cart.style.visibility = "hidden";
+    _overlay.style.visibility = "hidden";
+  });
+
+  _cartButton.addEventListener("click", () => {
+    _cart.style.visibility = "visible";
+    _overlay.style.visibility = "visible";
   });
 }());

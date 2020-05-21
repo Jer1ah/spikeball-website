@@ -156,11 +156,23 @@
                     <a href="#"><img src="images/users.svg" alt="User Icon"></a>
                 </li>
                 <li class="navigation__secondaryListItem">
-                    <a href="#"><img src="images/shopping-cart.svg" alt="Shopping Cart Icon"></a>
+                    <a href="#" class="shoppingCartButton"><img src="images/shopping-cart.svg" alt="Shopping Cart Icon"></a>
                 </li>
             </ul>
         </nav>
         <input type="text" class="searchbar" placeholder="What are you looking for?">
+        <div class="shoppingCart">
+            <div class="shoppingCart__heading">
+                <img src="images/black-close.svg" alt="Close Icon">
+                <h2>Shopping Cart (0)</h2>
+            </div> <!-- .heading end -->
+            <ul class="shoppingCart__list"></ul>
+            <div class="emptyCart">
+                <span>Oh no! Your cart is empty.</span>
+                <a href="#">Shop Sets</a>
+            </div> <!-- .emptyCart end -->
+        </div> <!-- .shoppingCart end -->
+        <div class="overlay"></div>
         <div class="header__heading">
             <h1>HAVE FUN</h1>
             <h1>ANYWHERE</h1>
