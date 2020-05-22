@@ -1,0 +1,95 @@
+.accounts {
+    @include displayFlex(row, flex-start, center);
+    margin: 13rem auto 10rem;
+    position: relative;
+
+    .logIn {
+        padding-right: 8rem;
+        @include displayFlex(column, flex-start, flex-start);
+
+        h2 {
+            font-size: 3.3rem;
+        }
+
+        .forgotPassword {
+            margin: 0 0 3rem;
+            text-decoration: none;
+            color: black;
+            font-size: 1.7rem;
+            font-weight: 500;
+            padding-bottom: .3rem;
+            border-bottom: solid .2rem $yellow;
+        }
+
+        .signIn {
+            @include displayFlex(row, center, center);
+            text-decoration: none;
+            color: $white;
+            background-color: $black;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            height: 4.8rem;
+            width: 20rem;
+            border: .2rem solid $black;
+            transition: all .15s;
+        }
+
+        .signIn:hover {
+            background-color: inherit;
+            color: $black;
+        }
+    }
+
+    .createAccount {
+        padding-left: 8rem;
+        border-left: .1rem solid lighten(gray, 35%);
+
+        h2 {
+            font-size: 3.3rem;
+        }
+
+        .signUp {
+            @include displayFlex(row, center, center);
+            text-decoration: none;
+            color: $white;
+            background-color: $black;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            height: 4.8rem;
+            width: 20rem;
+            border: .2rem solid $black;
+            transition: all .15s;
+        }
+
+        .signUp:hover {
+            background-color: inherit;
+            color: $black;
+        }
+    }
+
+    .inputField {
+        @include displayFlex(column, flex-start, flex-start);
+        margin-bottom: 2rem;
+
+        label {
+            color: $black;
+            opacity: .85;
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+        }
+
+        input {
+            border: lighten(lightgray, 1%) .1rem solid;
+            width: 45rem;
+            height: 4.4rem;
+            text-indent: 1rem;
+            font-size: 1.5rem;
+            transition: all .15s;
+        }
+
+        input:focus {
+            border: lighten(black, 5%) solid .1rem;
+            outline: none;
+        }
+    }
+}

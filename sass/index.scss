@@ -1,17 +1,17 @@
-// 0-base
+// 0-base folder
 @import '0-base/base';
 
-// 1-helpers
+// 1-helpers folder
 @import '1-helpers/functions';
 @import '1-helpers/mixins';
 @import '1-helpers/variables';
 
-// 3-modules
+// 3-modules folder
 @import '3-modules/navigation';
 @import '3-modules/footer';
 @import '3-modules/shoppingCart';
 
-// 4-layout
+// 4-layout folder
 @import '4-layout/header';
 @import '4-layout/ourMission';
 @import '4-layout/basics';
@@ -19,3 +19,8 @@
 @import '4-layout/bestSellers';
 @import '4-layout/givingBack';
 @import '4-layout/quotes';
+
+// 5-pages folder
+//account-page
+@import '5-pages/account-page/header';
+@import '5-pages/account-page/accounts';
