@@ -1006,4 +1006,32 @@ html, body {
   padding: 0.3rem 0.5rem;
 }
 
+.standardKits {
+  margin: 7.5rem auto 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.standardKits__header {
+  width: 90%;
+  background-color: #000;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.standardKits__header h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin: 5rem 0 0;
+}
+.standardKits__header p {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 50rem;
+  margin: 1rem auto 5rem;
+  line-height: 2.7rem;
+}
+
 /*# sourceMappingURL=index.css.map */
