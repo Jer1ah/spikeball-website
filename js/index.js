@@ -51,12 +51,12 @@ const shoppingcartSlideController = (function() {
   const _cartButton = document.querySelector(".shoppingCartButton");
 
   _closeButton.addEventListener("click", () => {
-    _cart.style.visibility = "hidden";
-    _overlay.style.visibility = "hidden";
+    _cart.style.display = "none";
+    _overlay.style.display = "none";
   });
 
   _cartButton.addEventListener("click", () => {
-    _cart.style.visibility = "visible";
-    _overlay.style.visibility = "visible";
+    _cart.style.display = "flex";
+    _overlay.style.display = "block";
   });
 }());

@@ -12,7 +12,9 @@
 <body>
     <header class="header accountHeader">
         <nav class="navigation">
-            <img src="images/spikeball.png" alt="Spikeball Logo" class="navigation__logo">
+            <a href="index.html">
+                <img src="images/spikeball.png" alt="Spikeball Logo" class="navigation__logo">
+            </a>
             <ul class="navigation__mainList">
                 <li class="navigation__mainListItem shopButton">
                     <a href="#" class="navLink">Shop</a>
@@ -21,7 +23,7 @@
                             <h3>SHOP</h3>
                             <ul class="info__list">
                                 <li class="info__listItem">
-                                    <a href="#">Kits &amp; Bundles</a>
+                                    <a href="kits.html">Kits &amp; Bundles</a>
                                 </li>
                                 <li class="info__listItem">
                                     <a href="#">Balls</a>
@@ -156,24 +158,24 @@
                     <a href="#"><img src="images/users.svg" alt="User Icon"></a>
                 </li>
                 <li class="navigation__secondaryListItem">
-                    <a href="account.html" class="shoppingCartButton"><img src="images/shopping-cart.svg" alt="Shopping Cart Icon"></a>
+                    <a href="#" class="shoppingCartButton"><img src="images/shopping-cart.svg" alt="Shopping Cart Icon"></a>
                 </li>
             </ul>
         </nav>
         <input type="text" class="searchbar" placeholder="What are you looking for?">
-        <div class="shoppingCart">
-            <div class="shoppingCart__heading">
-                <img src="images/black-close.svg" alt="Close Icon">
-                <h2>Shopping Cart (0)</h2>
-            </div> <!-- .heading end -->
-            <ul class="shoppingCart__list"></ul>
-            <div class="emptyCart">
-                <span>Oh no! Your cart is empty.</span>
-                <a href="#">Shop Sets</a>
-            </div> <!-- .emptyCart end -->
-        </div> <!-- .shoppingCart end -->
-        <div class="overlay"></div>
     </header>
+    <div class="shoppingCart">
+        <div class="shoppingCart__heading">
+            <img src="images/black-close.svg" alt="Close Icon">
+            <h2>Shopping Cart (0)</h2>
+        </div> <!-- .heading end -->
+        <ul class="shoppingCart__list"></ul>
+        <div class="emptyCart">
+            <span>Oh no! Your cart is empty.</span>
+            <a href="#">Shop Sets</a>
+        </div> <!-- .emptyCart end -->
+    </div> <!-- .shoppingCart end -->
+    <div class="overlay"></div>
     <div class="accounts">
         <div class="logIn">
             <h2>LOG IN</h2>

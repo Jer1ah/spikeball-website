@@ -2,12 +2,12 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 130;
-    height: 100vh;
+    z-index: 250;
+    height: 100%;
     width: 50rem;
     background-color: $light-gray;
     @include displayFlex(column, center, flex-start);
-    visibility: hidden;
+    display: none;
 
     &__heading {
         @include displayFlex(row, center, center);
@@ -66,8 +66,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 120;
+    z-index: 150;
     background-color: $black;
     opacity: .4;
-    visibility: hidden;
+    display: none;
 }
