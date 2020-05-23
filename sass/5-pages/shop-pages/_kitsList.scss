@@ -1,10 +1,12 @@
-.standardKits {
-    padding: 7.5rem 0 10rem;
+//standard kit
+.kits {
+    padding: 7.5rem 0 0;
     @include displayFlex(column, center, flex-start);
     background-color: $light-gray;
 
     &__header {
         width: 90%;
+        max-width: 150rem;
         background-color: $black;
         text-align: center;
         border-radius: .3rem;
@@ -30,7 +32,12 @@
         @include displayFlex(row, flex-start, space-between);
         flex-wrap: wrap;
         width: 90%;
+        max-width: 150rem;
         margin: 5rem 0 0;
+    }
+
+    &__list:last-child {
+        margin-bottom: 5rem;
     }
 
     &__listItem {

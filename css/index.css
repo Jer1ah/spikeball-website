@@ -1006,26 +1006,27 @@ html, body {
   padding: 0.3rem 0.5rem;
 }
 
-.standardKits {
-  padding: 7.5rem 0 10rem;
+.kits {
+  padding: 7.5rem 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   background-color: #F8F8F8;
 }
-.standardKits__header {
+.kits__header {
   width: 90%;
+  max-width: 150rem;
   background-color: #000;
   text-align: center;
   border-radius: 0.3rem;
 }
-.standardKits__header h2 {
+.kits__header h2 {
   color: #fff;
   font-size: 3.5rem;
   margin: 5rem 0 0;
 }
-.standardKits__header p {
+.kits__header p {
   color: #fff;
   opacity: 0.9;
   font-size: 1.5rem;
@@ -1034,16 +1035,20 @@ html, body {
   margin: 1rem auto 5rem;
   line-height: 2.7rem;
 }
-.standardKits__list {
+.kits__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   width: 90%;
+  max-width: 150rem;
   margin: 5rem 0 0;
 }
-.standardKits__listItem {
+.kits__list:last-child {
+  margin-bottom: 5rem;
+}
+.kits__listItem {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1055,43 +1060,43 @@ html, body {
   background-color: #fff;
   border: black solid 0.1rem;
 }
-.standardKits__listItem .image {
+.kits__listItem .image {
   width: 48%;
 }
-.standardKits__listItem .image img {
+.kits__listItem .image img {
   width: 27rem;
 }
-.standardKits__listItem .info {
+.kits__listItem .info {
   width: 48%;
   margin-left: 2rem;
 }
-.standardKits__listItem .info span {
+.kits__listItem .info span {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.standardKits__listItem .info span img {
+.kits__listItem .info span img {
   width: 1.5rem;
   margin-right: 0.5rem;
 }
-.standardKits__listItem .info span h5 {
+.kits__listItem .info span h5 {
   margin: 0 0 0 0.2rem;
   font-size: 1.5rem;
   font-weight: 300;
   opacity: 0.85;
 }
-.standardKits__listItem .info h3 {
+.kits__listItem .info h3 {
   font-size: 2rem;
   font-weight: 400;
   margin: 1.5rem 0;
 }
-.standardKits__listItem .info h2 {
+.kits__listItem .info h2 {
   font-size: 2.5rem;
   line-height: 3.5rem;
   margin: 0;
 }
-.standardKits__listItem .info a {
+.kits__listItem .info a {
   color: #000;
   opacity: 0.85;
   font-size: 1.7rem;
