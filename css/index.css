@@ -431,6 +431,7 @@ html, body {
 
 .footer {
   height: 11rem;
+  width: 100%;
   border-top: 0.2rem solid #F8F8F8;
   display: flex;
   flex-direction: row;
@@ -1043,7 +1044,7 @@ html, body {
   flex-wrap: wrap;
   width: 90%;
   max-width: 150rem;
-  margin: 5rem 0 0;
+  margin: 5rem 0 7.5rem;
 }
 .kits__list:last-child {
   margin-bottom: 5rem;
@@ -1051,14 +1052,14 @@ html, body {
 .kits__listItem {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 48%;
   height: 30rem;
   margin-bottom: 3rem;
   border-radius: 0.3rem;
   background-color: #fff;
-  border: black solid 0.1rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
 }
 .kits__listItem .image {
   width: 48%;
@@ -1067,8 +1068,7 @@ html, body {
   width: 27rem;
 }
 .kits__listItem .info {
-  width: 48%;
-  margin-left: 2rem;
+  width: 45%;
 }
 .kits__listItem .info span {
   display: flex;

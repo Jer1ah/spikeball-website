@@ -1,5 +1,6 @@
 .footer {
     height: 11rem;
+    width: 100%;
     border-top: .2rem solid $light-gray;
     @include displayFlex(row, center, space-between);
 

@@ -33,7 +33,7 @@
         flex-wrap: wrap;
         width: 90%;
         max-width: 150rem;
-        margin: 5rem 0 0;
+        margin: 5rem 0 7.5rem;
     }
 
     &__list:last-child {
@@ -41,13 +41,13 @@
     }
 
     &__listItem {
-        @include displayFlex(row, center, flex-start);
+        @include displayFlex(row, center, center);
         width: 48%;
         height: 30rem;
         margin-bottom: 3rem;
         border-radius: .3rem;
         background-color: $white;
-        border: black solid .1rem;
+        border: .2rem solid rgba(0,0,0,.1);
 
         .image {
             width: 48%;
@@ -58,8 +58,7 @@
         }
 
         .info {
-            width: 48%;
-            margin-left: 2rem;
+            width: 45%;
 
             span {
                 @include displayFlex(row, center, flex-start);
