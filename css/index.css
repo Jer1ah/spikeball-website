@@ -1007,11 +1007,12 @@ html, body {
 }
 
 .standardKits {
-  margin: 7.5rem auto 10rem;
+  padding: 7.5rem 0 10rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: #F8F8F8;
 }
 .standardKits__header {
   width: 90%;
@@ -1032,6 +1033,71 @@ html, body {
   width: 50rem;
   margin: 1rem auto 5rem;
   line-height: 2.7rem;
+}
+.standardKits__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 5rem 0 0;
+}
+.standardKits__listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 48%;
+  height: 30rem;
+  margin-bottom: 3rem;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  border: black solid 0.1rem;
+}
+.standardKits__listItem .image {
+  width: 48%;
+}
+.standardKits__listItem .image img {
+  width: 27rem;
+}
+.standardKits__listItem .info {
+  width: 48%;
+  margin-left: 2rem;
+}
+.standardKits__listItem .info span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.standardKits__listItem .info span img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+.standardKits__listItem .info span h5 {
+  margin: 0 0 0 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+.standardKits__listItem .info h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+.standardKits__listItem .info h2 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin: 0;
+}
+.standardKits__listItem .info a {
+  color: #000;
+  opacity: 0.85;
+  font-size: 1.7rem;
+  font-weight: 300;
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

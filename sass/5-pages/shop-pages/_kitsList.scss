@@ -1,6 +1,7 @@
 .standardKits {
-    margin: 7.5rem auto 10rem;
+    padding: 7.5rem 0 10rem;
     @include displayFlex(column, center, flex-start);
+    background-color: $light-gray;
 
     &__header {
         width: 90%;
@@ -22,6 +23,73 @@
             width: 50rem;
             margin: 1rem auto 5rem;
             line-height: 2.7rem;
+        }
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 5rem 0 0;
+    }
+
+    &__listItem {
+        @include displayFlex(row, center, flex-start);
+        width: 48%;
+        height: 30rem;
+        margin-bottom: 3rem;
+        border-radius: .3rem;
+        background-color: $white;
+        border: black solid .1rem;
+
+        .image {
+            width: 48%;
+
+            img {
+                width: 27rem;
+            }
+        }
+
+        .info {
+            width: 48%;
+            margin-left: 2rem;
+
+            span {
+                @include displayFlex(row, center, flex-start);
+
+                img {
+                    width: 1.5rem;
+                    margin-right: .5rem;
+                }
+
+                h5 {
+                    margin: 0 0 0 .2rem;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    opacity: .85;
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+                font-weight: 400;
+                margin: 1.5rem 0; 
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                line-height: 3.5rem;
+                margin: 0;
+            }
+
+            a {
+                color: $black;
+                opacity: .85;
+                font-size: 1.7rem;
+                font-weight: 300;
+                display: inline-block;
+                margin-top: 2rem;
+            }
         }
     }
 }
