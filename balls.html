@@ -10,7 +10,7 @@
     <title>Spikeball</title>
 </head>
 <body>
-    <header class="header accountHeader">
+    <header class="header ballsHeader">
         <nav class="navigation">
             <a href="index.html">
                 <img src="images/spikeball.png" alt="Spikeball Logo" class="navigation__logo">
@@ -155,7 +155,7 @@
                     <a href="#" class="searchButton"><img src="images/magnifying-glass.svg" alt="Magnifying Glass Icon"></a>
                 </li>
                 <li class="navigation__secondaryListItem">
-                    <a href="#"><img src="images/users.svg" alt="User Icon"></a>
+                    <a href="account.html"><img src="images/users.svg" alt="User Icon"></a>
                 </li>
                 <li class="navigation__secondaryListItem">
                     <a href="#" class="shoppingCartButton"><img src="images/shopping-cart.svg" alt="Shopping Cart Icon"></a>
@@ -163,7 +163,10 @@
             </ul>
         </nav>
         <input type="text" class="searchbar" placeholder="What are you looking for?">
-    </header>
+        <div class="ballsHeader__heading">
+            <h1>Balls</h1>
+        </div> <!-- .ballsHeader__heading end -->
+    </header> <!-- .ballsHeader end -->
     <div class="shoppingCart">
         <div class="shoppingCart__heading">
             <img src="images/black-close.svg" alt="Close Icon">
@@ -176,45 +179,154 @@
         </div> <!-- .emptyCart end -->
     </div> <!-- .shoppingCart end -->
     <div class="overlay"></div>
-    <div class="accounts">
-        <div class="logIn">
-            <h2>LOG IN</h2>
-            <div class="inputField">
-                <label for="">EMAIL ADDRESS</label>
-                <input type="text">
-            </div>
-            <div class="inputField">
-                <label for="">PASSWORD</label>
-                <input type="text">
-            </div>
-            <a href="#" class="forgotPassword">Forgot Password</a>
-            <a href="#" class="signIn">SIGN IN</a>
-        </div> <!-- .logIn end -->
-        <div class="createAccount">
-            <h2>CREATE AN ACCOUNT</h2>
-            <div class="inputField">
-                <label for="">FIRST NAME</label>
-                <input type="text">
-            </div>
-            <div class="inputField">
-                <label for="">LAST NAME</label>
-                <input type="text">
-            </div>
-            <div class="inputField">
-                <label for="">EMAIL ADDRESS</label>
-                <input type="text">
-            </div>
-            <div class="inputField">
-                <label for="">PASSWORD</label>
-                <input type="text">
-            </div>
-            <div class="inputField">
-                <label for="">CONFIRM PASSWORD</label>
-                <input type="text">
-            </div>
-            <a href="#" class="signUp">SIGN UP</a>
-        </div> <!-- .createAccount end -->
-    </div> <!-- .accounts end -->
+    <div class="balls">
+        <div class="balls__list">
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/holiday-pro-balls.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>34 Reviews</h5>
+                    </span>
+                    <h3>$15.00</h3>
+                    <h2>Holiday Pro Balls (2 Pack)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/pro-balls.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>87 Reviews</h5>
+                    </span>
+                    <h3>$14.99</h3>
+                    <h2>Pro Balls (2 Pack)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/xtra-balls.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>33 Reviews</h5>
+                    </span>
+                    <h3>$12.9</h3>
+                    <h2>X-TRA Balls (2 Pack)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/rookie-ball.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>8 Reviews</h5>
+                    </span>
+                    <h3>$12.99</h3>
+                    <h2>Rookie Ball</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/glow-in-the-dark-balls.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>73 Reviews</h5>
+                    </span>
+                    <h3>$14.99</h3>
+                    <h2>Glow In The Dark Balls (2 Pack)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/10ball-kit.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>14 Reviews</h5>
+                    </span>
+                    <h3>$40.00</h3>
+                    <h2>Ball Kit (10 Count)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/20ball-kit.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>7 Reviews</h5>
+                    </span>
+                    <h3>$65.00</h3>
+                    <h2>Ball Kit (20 Count)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+            <div class="balls__listItem">
+                <div class="image">
+                    <img src="images/10ball-pro-kit.jpg" alt="Stock Photo">
+                </div>
+                <div class="info">
+                    <span>
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <img src="images/star.svg" alt="Star Icon">
+                        <h5>38 Reviews</h5>
+                    </span>
+                    <h3>$49.00</h3>
+                    <h2>Pro Ball Kit (10 Count)</h2>
+                    <a href="#">View Details</a>
+                </div>
+            </div> <!-- .balls__listItem end -->
+        </div> <!-- .balls__list end -->
+    </div> <!-- .balls end -->
     <footer class="footer">
         <span>&copy; 2018 Spikeball Store | As Seen On Shark Tank</span>
         <div class="emailInput">
