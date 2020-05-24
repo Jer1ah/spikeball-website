@@ -1233,4 +1233,77 @@ html, body {
   letter-spacing: 0.3rem;
 }
 
+.gameBasics {
+  background-color: #F8F8F8;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gameBasics h2 {
+  font-size: 4rem;
+  margin: 7rem 0 0;
+  letter-spacing: 0.3rem;
+}
+.gameBasics__list {
+  width: 60rem;
+  padding: 0;
+  position: relative;
+  margin: 7rem 0;
+}
+.gameBasics__listItem {
+  text-align: center;
+}
+.gameBasics__listItem h3 {
+  font-size: 3.3rem;
+  font-weight: 400;
+  opacity: 0.85;
+  margin: 0 auto 2rem;
+}
+.gameBasics__listItem p {
+  font-size: 2rem;
+  width: 65%;
+  font-weight: 300;
+  opacity: 0.75;
+  line-height: 3rem;
+  margin: 0 auto 0;
+}
+.gameBasics .nextButton, .gameBasics .prevButton {
+  width: 2rem;
+  position: absolute;
+}
+.gameBasics .nextButton {
+  right: -2rem;
+  top: 7rem;
+}
+.gameBasics .prevButton {
+  left: -2rem;
+  top: 7rem;
+}
+.gameBasics .nextButton:hover, .gameBasics .prevButton:hover {
+  cursor: pointer;
+}
+
+.rules__wrapper {
+  width: 110rem;
+  margin: 5rem auto 5rem;
+  padding: 0.1rem;
+}
+.rules__wrapper h2 {
+  font-size: 3.7rem;
+  margin: 2rem 0 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.rules__wrapper a {
+  display: inline-block;
+  margin: 1rem 0 7rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  border-bottom: solid 0.2rem #F0E50A;
+}
+
 /*# sourceMappingURL=index.css.map */

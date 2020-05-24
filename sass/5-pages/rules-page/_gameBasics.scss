@@ -1,0 +1,57 @@
+.gameBasics {
+    background-color: $light-gray;
+    padding: .1rem;
+    @include displayFlex(column, center, flex-start);
+
+    h2 {
+        font-size: 4rem;
+        margin: 7rem 0 0;
+        letter-spacing: .3rem;
+    }
+
+    &__list {
+        width: 60rem;
+        padding: 0;
+        position: relative;
+        margin: 7rem 0;
+    }
+
+    &__listItem {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-weight: 400;
+            opacity: .85;
+            margin: 0 auto 2rem;
+        }
+
+        p {
+            font-size: 2rem;
+            width: 65%;
+            font-weight: 300;
+            opacity: .75;
+            line-height: 3rem;
+            margin: 0 auto 0;
+        }
+    }
+
+    .nextButton, .prevButton {
+        width: 2rem;
+        position: absolute;
+    }
+
+    .nextButton {
+        right: -2rem;
+        top: 7rem;
+    }
+
+    .prevButton {
+        left: -2rem;
+        top: 7rem;
+    }
+
+    .nextButton:hover, .prevButton:hover {
+        cursor: pointer;
+    }
+}

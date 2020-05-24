@@ -60,3 +60,11 @@ const shoppingcartSlideController = (function() {
     _overlay.style.display = "block";
   });
 }());
+
+
+//spikeball rules slider
+$('.gameBasics__list').slick({
+  arrows: true,
+  prevArrow: "<img src='../images/prev-arrow.svg' class='prevButton'/>",
+  nextArrow: "<img src='../images/next-arrow.svg' class='nextButton'/>"
+});

@@ -1,0 +1,25 @@
+.rules {
+
+    &__wrapper {
+        width: 110rem;
+        margin: 5rem auto 5rem;
+        padding: .1rem;
+
+        h2 {
+            font-size: 3.7rem;
+            margin: 2rem 0 1.5rem;
+            letter-spacing: .2rem;
+        }
+
+        a {
+            display: inline-block;
+            margin: 1rem 0 7rem;
+            text-decoration: none;
+            color: black;
+            font-size: 1.7rem;
+            font-weight: 500;
+            padding-bottom: .3rem;
+            border-bottom: solid .2rem $yellow;
+        }
+    }
+}
