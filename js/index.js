@@ -68,3 +68,22 @@ $('.gameBasics__list').slick({
   prevArrow: "<img src='../images/prev-arrow.svg' class='prevButton'/>",
   nextArrow: "<img src='../images/next-arrow.svg' class='nextButton'/>"
 });
+
+
+//rules accordion functionality
+const rulesAccoridionController = (function() {
+  const _buttons = [...document.querySelectorAll(".rules__button")];
+  const _contentList = [...document.querySelectorAll(".rules__content")];
+
+  const contentSlider = (event) => {
+    if(window.getComputedStyle(event.target.nextElementSibling).maxHeight < "1px") {
+      event.target.nextElementSibling.style.maxHeight = event.target.scrollHeight + "px";
+    } else {
+      event.target.nextElementSibling.style.maxHeight = null;
+    }
+  };
+
+  _buttons.forEach((item) => {
+    item.addEventListener("click", contentSlider);
+  });
+}());

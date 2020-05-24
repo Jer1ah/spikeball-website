@@ -1,8 +1,7 @@
 .rules {
-
     &__wrapper {
         width: 110rem;
-        margin: 5rem auto 5rem;
+        margin: 5rem auto 6rem;
         padding: .1rem;
 
         h2 {
@@ -13,13 +12,51 @@
 
         a {
             display: inline-block;
-            margin: 1rem 0 7rem;
+            margin: 1rem 0 5rem;
             text-decoration: none;
             color: black;
             font-size: 1.7rem;
             font-weight: 500;
             padding-bottom: .3rem;
             border-bottom: solid .2rem $yellow;
+        }
+    }
+
+    &__list {
+        border-bottom: .1rem solid lighten($black, 90%);
+    }
+
+    &__item {
+        border-top: .1rem solid lighten($black, 90%);
+    }
+
+    &__button {
+        width: 100%;
+        text-align: left;
+        border-radius: none;
+        height: 5rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        border: none;
+        padding: 0;
+        outline: none;
+    }
+
+    &__button:hover {
+        cursor: pointer;
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: all .2s ease-out;
+
+        p {
+            color: $black;
+            opacity: .85;
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin: 0 0 1rem 0;
         }
     }
 }
