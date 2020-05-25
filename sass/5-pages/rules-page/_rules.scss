@@ -26,10 +26,6 @@
         border-bottom: .1rem solid lighten($black, 90%);
     }
 
-    &__item {
-        border-top: .1rem solid lighten($black, 90%);
-    }
-
     &__button {
         width: 100%;
         text-align: left;
@@ -40,6 +36,7 @@
         border: none;
         padding: 0;
         outline: none;
+        border-top: .1rem solid lighten($black, 90%);
     }
 
     &__button:hover {
@@ -56,7 +53,19 @@
             opacity: .85;
             font-size: 1.7rem;
             font-weight: 300;
-            margin: 0 0 1rem 0;
+            margin: 1rem 0;
+        }
+
+        p:first-child {
+            margin-top: 0;
+        }
+
+        &List {
+            padding: 0 0 0 2rem;
+
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
 }

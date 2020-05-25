@@ -1,0 +1,85 @@
+.getStarted {
+    padding: .1rem;
+    background-color: $light-gray;
+
+    &__list {
+        margin: 5rem auto 7rem;
+        @include displayFlex(row, center, center);
+        width: 135rem;
+
+        .main {
+            flex: 1;
+            position: relative;
+            margin-right: 2rem;
+
+            img {
+                width: 100%;
+            }
+
+            .info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $white;
+                width: 40rem;
+                height: 17rem;
+
+                h2 {
+                    font-size: 3.5rem;
+                    margin: 4rem 0 0 3rem;
+                }
+
+                a {
+                    display: inline-block;
+                    margin: 1.5rem 0 7rem 3rem;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                    padding-bottom: .3rem;
+                    border-bottom: solid .2rem $yellow;
+                }
+            }
+        }
+
+        .aside {
+            flex: 1;
+            @include displayFlex(column, space-between, space-between);
+            margin-left: 2rem;
+            height: 63.1rem;
+
+            &__item {
+                @include displayFlex(row, center, center);
+                height: 30rem;
+
+                img {
+                    height: 100%;
+                }
+
+                .info {
+                    flex: 1;
+                    background-color: $white;
+                    text-align: center;
+                    height: 100%;
+
+                    h2 {
+                        font-size: 3.5rem;
+                        width: 80%;
+                        margin: 8.5rem auto 0;
+                    }
+
+                    a {
+                        display: inline-block;
+                        margin: 2rem 0 7rem;
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.7rem;
+                        font-weight: 500;
+                        padding-bottom: .3rem;
+                        border-bottom: solid .2rem $yellow;
+                    }
+                }
+            }
+        }
+    }
+}

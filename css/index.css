@@ -1308,9 +1308,6 @@ html, body {
 .rules__list {
   border-bottom: 0.1rem solid #e6e6e6;
 }
-.rules__item {
-  border-top: 0.1rem solid #e6e6e6;
-}
 .rules__button {
   width: 100%;
   text-align: left;
@@ -1321,6 +1318,7 @@ html, body {
   border: none;
   padding: 0;
   outline: none;
+  border-top: 0.1rem solid #e6e6e6;
 }
 .rules__button:hover {
   cursor: pointer;
@@ -1335,7 +1333,99 @@ html, body {
   opacity: 0.85;
   font-size: 1.7rem;
   font-weight: 300;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
+}
+.rules__content p:first-child {
+  margin-top: 0;
+}
+.rules__contentList {
+  padding: 0 0 0 2rem;
+}
+.rules__contentList p {
+  font-size: 1.5rem;
+}
+
+.getStarted {
+  padding: 0.1rem;
+  background-color: #F8F8F8;
+}
+.getStarted__list {
+  margin: 5rem auto 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 135rem;
+}
+.getStarted__list .main {
+  flex: 1;
+  position: relative;
+  margin-right: 2rem;
+}
+.getStarted__list .main img {
+  width: 100%;
+}
+.getStarted__list .main .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 40rem;
+  height: 17rem;
+}
+.getStarted__list .main .info h2 {
+  font-size: 3.5rem;
+  margin: 4rem 0 0 3rem;
+}
+.getStarted__list .main .info a {
+  display: inline-block;
+  margin: 1.5rem 0 7rem 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  border-bottom: solid 0.2rem #F0E50A;
+}
+.getStarted__list .aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  margin-left: 2rem;
+  height: 63.1rem;
+}
+.getStarted__list .aside__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+.getStarted__list .aside__item img {
+  height: 100%;
+}
+.getStarted__list .aside__item .info {
+  flex: 1;
+  background-color: #fff;
+  text-align: center;
+  height: 100%;
+}
+.getStarted__list .aside__item .info h2 {
+  font-size: 3.5rem;
+  width: 80%;
+  margin: 8.5rem auto 0;
+}
+.getStarted__list .aside__item .info a {
+  display: inline-block;
+  margin: 2rem 0 7rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  border-bottom: solid 0.2rem #F0E50A;
 }
 
 /*# sourceMappingURL=index.css.map */

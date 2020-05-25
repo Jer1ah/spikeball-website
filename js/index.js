@@ -75,15 +75,14 @@ const rulesAccoridionController = (function() {
   const _buttons = [...document.querySelectorAll(".rules__button")];
   const _contentList = [...document.querySelectorAll(".rules__content")];
 
-  const contentSlider = (event) => {
-    if(window.getComputedStyle(event.target.nextElementSibling).maxHeight < "1px") {
-      event.target.nextElementSibling.style.maxHeight = event.target.scrollHeight + "px";
-    } else {
-      event.target.nextElementSibling.style.maxHeight = null;
-    }
-  };
-
-  _buttons.forEach((item) => {
-    item.addEventListener("click", contentSlider);
-  });
+  for (let i = 0; i < _buttons.length; i++) {
+    _buttons[i].addEventListener("click", function() {
+      let panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 }());
