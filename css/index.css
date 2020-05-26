@@ -1428,4 +1428,93 @@ html, body {
   border-bottom: solid 0.2rem #F0E50A;
 }
 
+.gettingStartedHeader {
+  background: none;
+  height: 7rem;
+}
+
+.gettingStarted__wrapper {
+  width: 115rem;
+  margin: 5rem auto 2rem;
+}
+.gettingStarted h1 {
+  font-size: 5rem;
+  margin: 6rem 0 1rem;
+}
+.gettingStarted h5 {
+  font-size: 2.2rem;
+}
+.gettingStarted .fullWidthVideo {
+  width: 100%;
+  height: 65rem;
+}
+.gettingStarted h3 {
+  font-size: 2.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.1rem solid gray;
+  margin-top: 3rem;
+}
+.gettingStarted__list {
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+.gettingStarted__listItem {
+  margin-bottom: 2rem;
+  width: 95%;
+}
+.gettingStarted__listItem p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-left: 0.5rem;
+  display: inline;
+}
+.gettingStarted__listItem h5 {
+  display: inline;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.gettingStarted__listItem a {
+  text-decoration: none;
+  border-bottom: solid 0.2rem #F0E50A;
+  color: #000;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+.gettingStarted .waysToPlay__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.gettingStarted .waysToPlay__listItem {
+  width: 48%;
+  margin-bottom: 4rem;
+}
+.gettingStarted .waysToPlay__listItem span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.gettingStarted .waysToPlay__listItem h3 {
+  font-size: 3rem;
+  border-bottom: 0;
+  margin: 0;
+}
+.gettingStarted .waysToPlay__listItem h5 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.gettingStarted .waysToPlay__listItem iframe {
+  width: 100%;
+  height: 35rem;
+}
+
 /*# sourceMappingURL=index.css.map */
