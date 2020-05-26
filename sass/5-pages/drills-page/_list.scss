@@ -1,0 +1,42 @@
+.drills {
+    &__wrapper {
+        width: 110rem;
+        margin: 5rem auto 5rem;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+            margin: 2rem 0 0;
+            font-weight: 500;
+        }
+    
+        p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            opacity: .85;
+            line-height: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+            margin-top: 4rem;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        @include displayFlex(row, flex-start, space-between);
+    }
+
+    &__listItem {
+        width: 48.5%;
+
+        iframe {
+            width: 100%;
+            height: 33rem;
+        }
+    }
+}
