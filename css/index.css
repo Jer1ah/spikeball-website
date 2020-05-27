@@ -1635,4 +1635,70 @@ html, body {
   height: 33rem;
 }
 
+.findPlayersHeader {
+  background: none;
+  height: 7rem;
+}
+
+.findPlayers__wrapper {
+  width: 115rem;
+  margin: 5rem auto 5rem;
+}
+.findPlayers__wrapper h1 {
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  margin: 7.5rem 0 0;
+}
+.findPlayers__wrapper h3 {
+  font-size: 2.2rem;
+  font-size: bolder;
+  margin: 3rem 0 0.5rem;
+}
+.findPlayers__wrapper p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-top: 0;
+}
+.findPlayers__wrapper .quote {
+  margin-top: 2.2rem;
+}
+.findPlayers__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.5rem 0 5.5rem;
+}
+.findPlayers__buttons a {
+  width: 48%;
+  background-color: #000;
+  border: none;
+  height: 5rem;
+  border-radius: 0.4rem;
+  color: #F0E50A;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.findPlayers .appImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+.findPlayers .appImage {
+  width: 29%;
+}
+.findPlayers .appImage img {
+  width: 100%;
+  height: 60rem;
+}
+
 /*# sourceMappingURL=index.css.map */
