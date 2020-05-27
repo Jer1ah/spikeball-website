@@ -1,0 +1,30 @@
+.spikeschool {
+    &__wrapper {
+        width: 115rem;
+        margin: 5rem auto 5rem;
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: .2rem;
+            margin: 7rem 0 2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            font-weight: 300;
+            opacity: .75;
+            line-height: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            margin: 5rem 0 1rem;
+            font-weight: 500;
+        }
+
+        iframe {
+            width: 100%;
+            height: 65rem;
+        }
+    }
+}
