@@ -1701,4 +1701,50 @@ html, body {
   height: 60rem;
 }
 
+.modsHeader {
+  background: none;
+  height: 7rem;
+}
+
+.mods__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mods__wrapper h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 5rem 0 1.5rem;
+}
+.mods__wrapper h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0 0 3rem;
+}
+.mods__wrapper iframe {
+  width: 60rem;
+  height: 35rem;
+  margin-bottom: 2rem;
+}
+.mods__wrapper span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.mods__wrapper span h5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-right: 0.77rem;
+}
+.mods__wrapper span p {
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
 /*# sourceMappingURL=index.css.map */

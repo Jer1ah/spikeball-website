@@ -1,0 +1,42 @@
+.mods {
+    &__wrapper {
+        @include displayFlex(column, center, flex-start);
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 500;
+            letter-spacing: .1rem;
+            margin: 5rem 0 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            margin: 0 0 3rem;
+        }
+
+        iframe {
+            width: 60rem;
+            height: 35rem;
+            margin-bottom: 2rem;
+        }
+
+        span {
+            @include displayFlex(row, center, center);
+            margin-bottom: 2rem;
+
+            h5 {
+                font-weight: 500;
+                font-size: 1.6rem;
+                margin: 0;
+                margin-right: .77rem;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.6rem;
+                margin: 0;
+            }
+        }
+    }
+}
