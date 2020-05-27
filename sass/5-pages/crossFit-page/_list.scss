@@ -1,0 +1,46 @@
+.crossTrain {
+    &__wrapper {
+        width: 115rem;
+        margin: 5rem auto 5rem;
+        text-align: center;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+            margin: 5rem 0 1rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.7rem;
+            margin: 0 0 4rem;
+            opacity: .75;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        @include displayFlex(row, flex-start, space-between);
+        flex-wrap: wrap;
+    }
+
+    &__listItem {
+        width: 48.5%;
+        margin-bottom: 2.2rem;
+
+        h3 {
+            font-size: 2.7rem;
+            font-weight: 400;
+            margin: 1rem 0 1rem;
+        }
+
+        p {}
+
+        iframe {
+            width: 100%;
+            height: 33rem;
+        }
+    }
+}
