@@ -1,0 +1,74 @@
+.aboutUs__wrapper {
+    width: 110rem;
+    margin: 5rem auto;
+    @include displayFlex(column, center, flex-start);
+
+    h1 {
+        font-size: 5rem;
+        letter-spacing: .1rem;
+        margin: 1rem 0 0;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        opacity: .90;
+        margin: 1.5rem 0 3rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 0 0 3rem;
+    }
+}
+
+.ourStory {
+    border: .1rem solid $black;
+    border-radius: .3rem;
+    @include displayFlex(column, center, flex-start);
+
+    &__header {
+        height: 5rem;
+        background-color: #222;
+        width: 100%;
+
+        h2 {
+            color: $yellow;
+            font-size: 2rem;
+            font-weight: 400;
+            border-bottom: .1rem solid $yellow;
+            width: 95%;
+            margin: 1rem auto 0;
+            text-align: center;
+            padding-bottom: .5rem;
+        }
+    }
+
+    img {
+        margin: 2rem 0 1.5rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.8rem;
+        opacity: .85;
+        width: 95%;
+        line-height: 2.5rem;
+        margin: 5rem auto 3rem;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin: 0 0 2rem;
+        line-height: 3rem;
+    }
+}
