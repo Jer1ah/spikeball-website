@@ -1711,6 +1711,8 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 110rem;
+  margin: 2rem auto 1rem;
 }
 .mods__wrapper h1 {
   font-size: 4rem;
@@ -1735,16 +1737,11 @@ html, body {
   align-items: center;
   margin-bottom: 2rem;
 }
-.mods__wrapper span h5 {
-  font-weight: 500;
-  font-size: 1.6rem;
-  margin: 0;
-  margin-right: 0.77rem;
-}
 .mods__wrapper span p {
   font-weight: 300;
   font-size: 1.6rem;
   margin: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

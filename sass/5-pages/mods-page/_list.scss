@@ -1,6 +1,8 @@
 .mods {
     &__wrapper {
         @include displayFlex(column, center, flex-start);
+        width: 110rem;
+        margin: 2rem auto 1rem;
 
         h1 {
             font-size: 4rem;
@@ -25,17 +27,11 @@
             @include displayFlex(row, center, center);
             margin-bottom: 2rem;
 
-            h5 {
-                font-weight: 500;
-                font-size: 1.6rem;
-                margin: 0;
-                margin-right: .77rem;
-            }
-
             p {
                 font-weight: 300;
                 font-size: 1.6rem;
                 margin: 0;
+                text-align: center;
             }
         }
     }
