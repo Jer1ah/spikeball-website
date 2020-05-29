@@ -23,6 +23,9 @@ html, body {
   width: 2.5rem;
   display: none;
 }
+.navigation .mobile-nav-black {
+  display: none;
+}
 .navigation .wrap {
   display: flex;
   flex-direction: row;
@@ -441,20 +444,64 @@ html, body {
 
 @media (max-width: 975px) {
   .navigation {
-    height: 6rem;
+    min-height: 6rem;
+    height: auto;
   }
   .navigation .mobile-nav {
     display: inline;
     margin-left: 2.2rem;
   }
+  .navigation .mobile-nav-black {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 300;
+    background-color: #000;
+    height: 55%;
+    width: 100%;
+    display: none;
+  }
   .navigation .mobile-nav:hover {
     cursor: pointer;
   }
   .navigation__logo {
-    margin-left: 2rem;
+    margin: 0;
     height: 2.5rem;
   }
+  .navigation .wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 19rem;
+  }
   .navigation__mainList {
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+  }
+  .navigation__mainListItem {
+    height: 6.6rem;
+    border-bottom: 0.1rem solid #e6e6e6;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .navigation__mainListItem .navLink {
+    margin-left: 2.5rem;
+  }
+  .navigation__mainListItem:hover .navLink {
+    border-bottom: 0.2rem solid transparent;
+    cursor: pointer;
+  }
+  .navigation .aboutButton:hover .about__dropdown, .navigation .playButton:hover .play__dropdown, .navigation .learnButton:hover .learn__dropdown, .navigation .shopButton:hover .shop__dropdown {
     display: none;
   }
   .navigation__secondaryListItem {

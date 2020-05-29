@@ -87,3 +87,24 @@ const rulesAccoridionController = (function() {
   }
 }());
 
+
+//mobile-nav functionality
+const mobileNavController = (function() {
+  const _button = document.querySelector(".mobile-nav");
+  const _nav = document.querySelector(".navigation__mainList");
+  const _blackBg = document.querySelector(".mobile-nav-black");
+
+  _button.addEventListener("click", () => {
+    if(window.getComputedStyle(_nav).display === "none") {
+      _nav.style.display = "flex";
+      _blackBg.style.display = "block";
+      _button.src = "images/close-black.svg";
+      _button.style.width = "1.55rem";
+    } else {
+      _nav.style.display = "none";
+      _blackBg.style.display = "none";
+      _button.src = "images/open-menu.svg";
+      _button.style.width = "2.5rem";
+    }
+  });
+}());
