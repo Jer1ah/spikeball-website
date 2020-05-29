@@ -1918,4 +1918,70 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.jobsHeader {
+  background: none;
+  height: 7rem;
+}
+
+.jobs__wrapper {
+  width: 115rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.jobs__wrapper h1 {
+  font-size: 4.5rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0 4rem;
+}
+.jobs__wrapper img {
+  width: 100%;
+}
+.jobs__wrapper h3 {
+  text-align: center;
+  width: 70rem;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  margin: 3rem auto 3rem;
+}
+.jobs__wrapper p {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.jobs__wrapper h2 {
+  align-self: flex-start;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  margin: 5rem 0 1rem;
+}
+.jobs__list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
+}
+.jobs__listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem auto;
+  width: 95%;
+}
+.jobs__listItem a {
+  text-decoration: none;
+  border-bottom: solid 0.2rem #F0E50A;
+  color: #000;
+  font-size: 1.8rem;
+}
+.jobs__listItem span {
+  font-size: 1.5rem;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=index.css.map */

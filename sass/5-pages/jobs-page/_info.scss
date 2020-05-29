@@ -1,0 +1,65 @@
+.jobs {
+    &__wrapper {
+        width: 115rem;
+        margin: 5rem auto;
+        @include displayFlex(column, center, flex-start);
+
+        h1 {
+            font-size: 4.5rem;
+            letter-spacing: .1rem;
+            margin: 1rem 0 4rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            width: 70rem;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            margin: 3rem auto 3rem;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+
+        h2 {
+            align-self: flex-start;
+            font-size: 3.5rem;
+            letter-spacing: .1rem;
+            margin: 5rem 0 1rem;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        list-style: none;
+        width: 100%;
+        border-top: .1rem solid lighten($black, 50%);
+        border-bottom: .1rem solid lighten($black, 50%);
+
+        &Item {
+            @include displayFlex(row, center, space-between);
+            margin: 3rem auto;
+            width: 95%;
+
+            a {
+                text-decoration: none;
+                border-bottom: solid .2rem $yellow;
+                color: $black;
+                font-size: 1.8rem;
+            }
+
+            span {
+                font-size: 1.5rem;
+                color: lighten($black, 30%);
+                font-weight: 400;
+            }
+        }
+    }
+}
