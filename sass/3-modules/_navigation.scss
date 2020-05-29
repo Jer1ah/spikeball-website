@@ -11,6 +11,15 @@
     height: 7rem;
     box-shadow: 0px 0px 15px 0px rgba(167,167,167,1);
 
+    .mobile-nav {
+        width: 2.5rem;
+        display: none;
+    }
+
+    .wrap {
+        @include displayFlex(row, center, center);
+    }
+
     &__logo {
         height: 3.77rem;
         margin-left: 3rem;
@@ -445,6 +454,39 @@
 
         a:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 975px) {
+    .navigation {
+        height: 6rem;
+
+        .mobile-nav {
+            display: inline;
+            margin-left: 2.2rem;
+        }
+
+        .mobile-nav:hover {
+            cursor: pointer;
+        }
+
+        &__logo {
+            margin-left: 2rem;
+            height: 2.5rem;
+        }
+
+        &__mainList {
+            display: none;
+        }
+
+        &__secondaryListItem {
+            width: 5.5rem;
+        }
+
+        &__secondaryListItem:nth-child(3) {
+            display: none;
         }
     }
 }

@@ -19,6 +19,16 @@ html, body {
   height: 7rem;
   box-shadow: 0px 0px 15px 0px #a7a7a7;
 }
+.navigation .mobile-nav {
+  width: 2.5rem;
+  display: none;
+}
+.navigation .wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .navigation__logo {
   height: 3.77rem;
   margin-left: 3rem;
@@ -429,6 +439,31 @@ html, body {
   text-decoration: underline;
 }
 
+@media (max-width: 975px) {
+  .navigation {
+    height: 6rem;
+  }
+  .navigation .mobile-nav {
+    display: inline;
+    margin-left: 2.2rem;
+  }
+  .navigation .mobile-nav:hover {
+    cursor: pointer;
+  }
+  .navigation__logo {
+    margin-left: 2rem;
+    height: 2.5rem;
+  }
+  .navigation__mainList {
+    display: none;
+  }
+  .navigation__secondaryListItem {
+    width: 5.5rem;
+  }
+  .navigation__secondaryListItem:nth-child(3) {
+    display: none;
+  }
+}
 .footer {
   height: 11rem;
   width: 100%;
