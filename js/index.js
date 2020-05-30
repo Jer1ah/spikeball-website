@@ -108,3 +108,14 @@ const mobileNavController = (function() {
     }
   });
 }());
+
+
+//mobile dropdown-nav functionality
+const mobileDropdownController = (function() {
+  const _shopDropdown = document.querySelector(".shop__dropdown .info");
+  const _shopButton = document.querySelector(".shopButton .navLink");
+  
+  _shopButton.addEventListener("click", () => {
+    _shopDropdown.style.display = "flex";
+  });
+}());

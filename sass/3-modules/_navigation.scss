@@ -542,4 +542,13 @@
             display: none;
         }
     }
+
+    .shop__dropdown .info {
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 30rem;
+    }
 }
